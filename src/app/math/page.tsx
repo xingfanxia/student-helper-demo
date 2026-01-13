@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Tooltip } from 'recharts';
 
 // 雷烜 - 初一数学期中考试 - 从批改试卷提取的真实数据
@@ -583,6 +584,14 @@ export default function MathExamAnalysis() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 p-4 md:p-6">
       <div className="max-w-5xl mx-auto">
+        {/* 返回按钮 */}
+        <Link href="/" className="inline-flex items-center gap-2 text-gray-600 hover:text-blue-600 mb-4 transition-colors">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          <span>返回首页</span>
+        </Link>
+
         {/* 头部 */}
         <div className="bg-white rounded-2xl shadow-lg p-5 mb-5">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
