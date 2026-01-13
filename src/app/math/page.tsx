@@ -576,7 +576,7 @@ export default function MathExamAnalysis() {
               </div>
 
               {/* 各模块详情 */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mt-4">
                 {topicStats.map((t, i) => (
                   <div
                     key={i}
