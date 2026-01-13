@@ -574,6 +574,50 @@ const practiceQuestions: Record<string, {
               "A chill ran down her spine, and she could barely catch her breath."
             ]
           },
+          {
+            id: 3,
+            type: "rewrite",
+            original: "He ran quickly.",
+            hints: ["用更具体的动词", "添加环境细节", "加入紧迫感"],
+            samples: [
+              "He dashed forward at full speed, his footsteps echoing through the empty street.",
+              "Without a second thought, he sprinted as fast as his legs could carry him.",
+              "He raced against time, his lungs burning with every desperate stride."
+            ]
+          },
+          {
+            id: 4,
+            type: "rewrite",
+            original: "She said angrily.",
+            hints: ["避免用said", "加入表情/动作", "体现愤怒程度"],
+            samples: [
+              "\"How could you!\" she snapped, her voice trembling with fury.",
+              "She glared at him and hissed through clenched teeth.",
+              "\"Enough!\" she exploded, slamming her fist on the table."
+            ]
+          },
+          {
+            id: 10,
+            type: "rewrite",
+            original: "The room was quiet.",
+            hints: ["用感官描写", "添加氛围渲染", "加入细节"],
+            samples: [
+              "A heavy silence hung in the room, so thick you could almost touch it.",
+              "Not a sound could be heard except the faint ticking of the old clock.",
+              "The room fell into an eerie stillness, as if time itself had stopped."
+            ]
+          },
+          {
+            id: 11,
+            type: "rewrite",
+            original: "She looked at him.",
+            hints: ["描述眼神", "加入情感", "体现关系"],
+            samples: [
+              "Her eyes met his with a mixture of hope and uncertainty.",
+              "She fixed her gaze on him, searching his face for answers.",
+              "She stole a glance at him, her eyes betraying the feelings she tried to hide."
+            ]
+          },
         ]
       },
       {
@@ -589,8 +633,83 @@ const practiceQuestions: Record<string, {
             keyElements: ["眼眶湿润", "心头一暖", "说不出话", "感激之情"],
             sample: "Tears welled up in her eyes as she looked at the unexpected gift. A warm feeling flooded through her heart, and for a moment, she was completely speechless. She tried to express her gratitude, but all she could manage was a choked whisper of 'thank you.'"
           },
+          {
+            id: 6,
+            type: "describe",
+            emotion: "紧张/焦虑",
+            prompt: "描写考试前的紧张心情（3-4句）",
+            keyElements: ["心跳加速", "手心出汗", "坐立不安", "深呼吸"],
+            sample: "My heart raced as I stared at the clock ticking away. My palms were so sweaty that I could barely hold my pen. I shifted restlessly in my seat, trying to calm my nerves with deep breaths, but the anxiety only seemed to grow stronger."
+          },
+          {
+            id: 7,
+            type: "describe",
+            emotion: "惊喜",
+            prompt: "描写收到意外惊喜的反应（3-4句）",
+            keyElements: ["难以置信", "眼睛睁大", "激动尖叫", "跳跃拥抱"],
+            sample: "Her jaw dropped in disbelief as she unwrapped the gift. Her eyes widened to the size of saucers, and she let out an excited scream. Without thinking, she threw her arms around her friend, jumping up and down with pure joy."
+          },
+          {
+            id: 12,
+            type: "describe",
+            emotion: "失落/沮丧",
+            prompt: "描写比赛失利后的失落心情（3-4句）",
+            keyElements: ["肩膀下垂", "低头", "眼神黯淡", "强忍泪水"],
+            sample: "His shoulders slumped as the final whistle blew. Head bowed, he stared at the ground, unable to face anyone. His eyes, once burning with determination, now looked empty and dull. He bit his lip hard, fighting back the tears that threatened to fall."
+          },
+          {
+            id: 13,
+            type: "describe",
+            emotion: "释然/解脱",
+            prompt: "描写完成艰难任务后的释然（3-4句）",
+            keyElements: ["长舒一口气", "肩上重担卸下", "笑容浮现", "轻松感"],
+            sample: "As she submitted the final report, a wave of relief washed over her. The weight that had been pressing on her shoulders for weeks finally lifted. A smile slowly spread across her face, and she let out a long, satisfied sigh. It was finally over."
+          },
         ]
       },
+      {
+        name: "段落续写",
+        level: "挑战",
+        icon: "📖",
+        questions: [
+          {
+            id: 8,
+            type: "continuation",
+            context: "故事背景：一个小男孩想买一只跛脚的小狗，店主说这只狗没人会要。",
+            givenStart: "The little boy got quite upset with the reply of the shop owner.",
+            wordLimit: "60-80词",
+            requirements: ["与开头自然衔接", "体现男孩的决心", "设置情节转折"],
+            sample: "He looked at the shop owner with determination burning in his eyes. \"I want this puppy more than any other,\" he said firmly. Slowly, he rolled up his trouser leg, revealing a metal brace that supported his own leg. \"You see, I don't run so well myself.\" His voice softened. \"This little puppy needs someone who truly understands what it feels like to be different.\""
+          },
+          {
+            id: 9,
+            type: "continuation",
+            context: "故事背景：店主被男孩的话深深触动。",
+            givenStart: "Deeply moved, the shop owner paused for a moment.",
+            wordLimit: "60-80词",
+            requirements: ["描写店主的内心变化", "给出温暖结局", "呼应主题"],
+            sample: "He felt his eyes sting with unexpected tears. In all his years of running this shop, he had never met such a remarkable child. \"Son,\" he said, his voice thick with emotion, \"this puppy is yours—no charge.\" He knelt down and gently placed the limping puppy into the boy's eager arms. \"Something tells me you two were meant to find each other.\""
+          },
+          {
+            id: 14,
+            type: "continuation",
+            context: "故事背景：一位老师发现班上最调皮的学生在偷偷帮助一位有困难的同学。",
+            givenStart: "Mrs. Johnson stopped at the doorway, unable to believe what she was seeing.",
+            wordLimit: "60-80词",
+            requirements: ["描写老师的情感变化", "体现学生的善良本质", "用细节打动人"],
+            sample: "Her heart softened as she watched Tommy, the class troublemaker, patiently explaining math problems to Sarah. He spoke in a gentle whisper, so different from his usual loud voice. Mrs. Johnson felt tears prick her eyes. All those times she had scolded him, never once had she tried to see the kind heart hidden beneath his tough exterior."
+          },
+          {
+            id: 15,
+            type: "continuation",
+            context: "故事背景：一个学生在暴风雨夜发现一只受伤的流浪猫。",
+            givenStart: "Without hesitation, she scooped up the trembling creature and rushed home.",
+            wordLimit: "60-80词",
+            requirements: ["描写救助过程", "体现人与动物的情感联结", "温暖的画面感"],
+            sample: "Rain dripping from her hair, she carefully wrapped the kitten in her warmest sweater. Throughout the night, she stayed by its side, feeding it warm milk and stroking its matted fur. By morning, a weak purr vibrated against her palm—the sweetest sound she had ever heard. At that moment, she knew she had found not just a pet, but a lifelong companion."
+          },
+        ]
+      }
     ]
   },
   "完形填空": {
@@ -608,11 +727,90 @@ const practiceQuestions: Record<string, {
             stem: "The school decided to ___ a ceremony to honor the retiring teacher.",
             options: ["A. celebrate", "B. hold", "C. describe", "D. organize"],
             answer: "B",
-            explanation: "hold a ceremony 是固定搭配，意为'举行仪式'。",
+            explanation: "hold a ceremony 是固定搭配，意为'举行仪式'。celebrate强调'庆祝（节日/胜利）'，不与ceremony搭配。",
             relatedError: "第42题"
+          },
+          {
+            id: 2,
+            stem: "She ___ for a moment before giving her final answer.",
+            options: ["A. worried", "B. improved", "C. hesitated", "D. aged"],
+            answer: "C",
+            explanation: "hesitate表示'犹豫、迟疑'，常用于回答前的短暂停顿。worry是'担心'，不表示停顿动作。",
+            relatedError: "第45题"
+          },
+          {
+            id: 3,
+            stem: "At the reunion, I recognized many of my former ___.",
+            options: ["A. neighbors", "B. leaders", "C. teachers", "D. classmates"],
+            answer: "D",
+            explanation: "reunion(同学聚会)语境下，认出的应该是classmates(同学)。",
+            relatedError: "第44题"
+          },
+          {
+            id: 4,
+            stem: "The ___ formed during high school often last a lifetime.",
+            options: ["A. habits", "B. bonds", "C. promises", "D. dreams"],
+            answer: "B",
+            explanation: "bonds意为'纽带、联系'，常用于描述深厚的人际关系。habits是'习惯'，不符合语境。",
+            relatedError: "第54题"
           },
         ]
       },
+      {
+        name: "语境理解",
+        level: "进阶",
+        icon: "🎯",
+        questions: [
+          {
+            id: 5,
+            stem: "High school is a time full of ___ — you're constantly trying to figure out who you are.",
+            options: ["A. challenges", "B. opportunities", "C. hope", "D. memories"],
+            answer: "A",
+            explanation: "根据后文'trying to figure out who you are'（寻找自我），challenges(挑战)最符合青春期的迷茫感。",
+          },
+          {
+            id: 6,
+            stem: "In the end, none of that ___ — what truly counts is the friendship we built.",
+            options: ["A. appears", "B. fails", "C. matters", "D. ends"],
+            answer: "C",
+            explanation: "none of that matters意为'那些都不重要'，与后文'what truly counts'形成对比。",
+            relatedError: "第48题"
+          },
+          {
+            id: 7,
+            stem: "Success isn't ___ by the car you drive or how much money you make.",
+            options: ["A. earned", "B. measured", "C. revealed", "D. admired"],
+            answer: "B",
+            explanation: "be measured by意为'以...来衡量'，表示成功不应以物质来定义。",
+          },
+          {
+            id: 8,
+            stem: "Looking at the old photos, I saw the familiar faces of my close ___ of friends.",
+            options: ["A. team", "B. unit", "C. circle", "D. crowd"],
+            answer: "C",
+            explanation: "circle of friends是固定搭配，意为'朋友圈子'。",
+            relatedError: "第52题"
+          },
+        ]
+      },
+      {
+        name: "综合训练",
+        level: "挑战",
+        icon: "🏆",
+        questions: [
+          {
+            id: 9,
+            type: "passage",
+            title: "模拟完形填空（节选）",
+            passage: "Twenty years had passed since I last saw my high school friends. As I entered the hall, a wave of (1)___ washed over me. I (2)___ recognized Sarah, though her hair had turned gray. We talked as if no time had passed, and I realized that true friendship never (3)___.",
+            blanks: [
+              { num: 1, options: ["A. sadness", "B. nostalgia", "C. anger", "D. confusion"], answer: "B", hint: "回忆往昔的情感" },
+              { num: 2, options: ["A. hardly", "B. immediately", "C. never", "D. seldom"], answer: "B", hint: "虽然变化但仍认出" },
+              { num: 3, options: ["A. changes", "B. exists", "C. fades", "D. grows"], answer: "C", hint: "友谊不会..." },
+            ]
+          },
+        ]
+      }
     ]
   },
   "语法填空": {
@@ -632,8 +830,81 @@ const practiceQuestions: Record<string, {
             explanation: "yesterday提示用一般过去时，fly→flew。",
             relatedError: "第58题"
           },
+          {
+            id: 2,
+            stem: "China ___ (make) tremendous progress in technology in recent years.",
+            answer: "has made",
+            explanation: "in recent years提示用现在完成时，表示从过去持续到现在的成就。",
+            relatedError: "第62题"
+          },
+          {
+            id: 3,
+            stem: "The bridge ___ (build) by the workers by the end of last month.",
+            answer: "had been built",
+            explanation: "by the end of last month提示过去完成时，bridge与build是被动关系。",
+          },
         ]
       },
+      {
+        name: "非谓语动词",
+        level: "进阶",
+        icon: "📐",
+        questions: [
+          {
+            id: 4,
+            stem: "The event was held ___ (mark) the 80th anniversary of victory.",
+            answer: "to mark",
+            explanation: "表目的，用不定式to do。",
+            relatedError: "第56题"
+          },
+          {
+            id: 5,
+            stem: "The plane, ___ (feature) state-of-the-art technology, impressed everyone.",
+            answer: "featuring",
+            explanation: "作非限制性定语，plane与feature是主动关系，用现在分词。",
+            relatedError: "第61题"
+          },
+          {
+            id: 6,
+            stem: "___ (face) with such difficulty, we must stay calm and find solutions.",
+            answer: "Faced",
+            explanation: "be faced with是固定搭配，作状语时省略be，用过去分词。",
+          },
+          {
+            id: 7,
+            stem: "The book ___ (write) in simple English is suitable for beginners.",
+            answer: "written",
+            explanation: "作后置定语，book与write是被动关系，用过去分词。",
+          },
+        ]
+      },
+      {
+        name: "词性转换",
+        level: "专项",
+        icon: "🔄",
+        questions: [
+          {
+            id: 8,
+            stem: "The achievement contributes to ___ (region) peace and stability.",
+            answer: "regional",
+            explanation: "修饰名词peace需要形容词，region→regional。",
+            relatedError: "第65题"
+          },
+          {
+            id: 9,
+            stem: "Through friendship, we can become happier, wiser and more ___ (satisfy).",
+            answer: "satisfied",
+            explanation: "与happier, wiser并列，需要形容词比较级，satisfy→satisfied→more satisfied。",
+            relatedError: "第68题"
+          },
+          {
+            id: 10,
+            stem: "Her ___ (determine) to succeed inspired everyone around her.",
+            answer: "determination",
+            explanation: "作主语需要名词，determine→determination。",
+          },
+        ]
+      }
     ]
   },
   "听力": {
@@ -653,8 +924,46 @@ const practiceQuestions: Record<string, {
             content: "听力中注意以下转折词后的信息：\n• but/however/yet — 转折后常是答案\n• actually/in fact — 表示真实情况\n• I mean — 表示解释说明",
             relatedError: "第4、8题"
           },
+          {
+            id: 2,
+            type: "tip",
+            title: "时间信息辨别",
+            content: "注意区分：\n• a week ago vs a month ago\n• at 10:00 vs by 10:00\n• before vs after\n• already vs not yet",
+            relatedError: "第12题"
+          },
+          {
+            id: 3,
+            type: "practice",
+            title: "模拟练习",
+            scenario: "Woman: Did you meet Ketty at the party last week?\nMan: Actually, I first met her about a month ago at a conference.",
+            question: "When did the man first meet Ketty?",
+            options: ["A. A week ago", "B. A month ago", "C. At the party"],
+            answer: "B",
+            explanation: "注意actually后的纠正信息，'about a month ago'才是正确时间。"
+          },
         ]
       },
+      {
+        name: "推断技巧",
+        level: "提高",
+        icon: "🔍",
+        questions: [
+          {
+            id: 4,
+            type: "tip",
+            title: "说话人意图推断",
+            content: "判断打电话/对话目的时：\n• 关注对话开头的原因说明\n• 区分'目的'和'结果'\n• 注意语气词暗示的态度",
+            relatedError: "第8题"
+          },
+          {
+            id: 5,
+            type: "tip",
+            title: "态度情感推断",
+            content: "从以下线索推断说话人态度：\n• 语气词：Oh/Well/Actually\n• 情感词汇：worried/excited/disappointed\n• 句式：反问句常表示否定或惊讶",
+            relatedError: "第18题"
+          },
+        ]
+      }
     ]
   },
   "阅读理解": {
@@ -673,6 +982,27 @@ const practiceQuestions: Record<string, {
             title: "推断题陷阱识别",
             content: "常见错误选项特征：\n• 过度推断：原文没有的信息\n• 以偏概全：只符合部分内容\n• 张冠李戴：混淆不同段落信息\n• 正反混淆：与原文态度相反",
             relatedError: "第34题"
+          },
+          {
+            id: 2,
+            type: "practice",
+            title: "推断题练习",
+            passage: "AI art helps artists create more works efficiently. However, this also raises concerns about job security in the creative industry, as AI can now produce artworks that once required human artists.",
+            question: "What can we infer from the passage?",
+            options: [
+              "A. AI art helps sell more artistic products.",
+              "B. Artists can create more works with AI's help.",
+              "C. The art industry will face tough competition.",
+              "D. AI art makes copyright problems harder to solve."
+            ],
+            answer: "C",
+            explanation: "从'concerns about job security'可推断行业竞争加剧。A、D原文未提及，B是事实陈述而非推断。"
+          },
+          {
+            id: 3,
+            type: "tip",
+            title: "保持阅读优势",
+            content: "继续保持的好习惯：\n• 先看题目再读文章\n• 标注关键词定位\n• 排除法确认答案\n• 每周3-4篇限时训练"
           },
         ]
       }
