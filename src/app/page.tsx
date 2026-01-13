@@ -15,7 +15,7 @@ export default function Home() {
         </div>
 
         {/* Demo Cards */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* English Demo */}
           <Link href="/english" className="group">
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 group-hover:border-indigo-200">
@@ -114,6 +114,58 @@ export default function Home() {
               </div>
               <div className="px-6 pb-6">
                 <div className="bg-blue-50 text-blue-700 rounded-xl py-3 text-center font-medium group-hover:bg-blue-100 transition-colors">
+                  查看详细诊断报告
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          {/* Grade 6 Math Demo */}
+          <Link href="/grade6-math" className="group">
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 group-hover:border-orange-200">
+              <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-6 text-white">
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center text-3xl">
+                    6
+                  </div>
+                  <div>
+                    <h2 className="text-2xl font-bold">数学学情诊断</h2>
+                    <p className="text-white/80">六年级期末考试分析</p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <div>
+                    <p className="text-sm text-gray-500">学生</p>
+                    <p className="font-medium text-gray-800">李明</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm text-gray-500">得分</p>
+                    <p className="text-2xl font-bold text-orange-600">85<span className="text-sm text-gray-400">/100</span></p>
+                  </div>
+                </div>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                    统计与规律 90% - 掌握优秀
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                    图形与几何 75% - 需加强
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <span className="w-2 h-2 bg-red-500 rounded-full"></span>
+                    数与百分数 65% - 重点突破
+                  </div>
+                </div>
+                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                  <span className="text-sm text-gray-500">预计提分空间</span>
+                  <span className="text-lg font-bold text-green-600">+10分</span>
+                </div>
+              </div>
+              <div className="px-6 pb-6">
+                <div className="bg-orange-50 text-orange-700 rounded-xl py-3 text-center font-medium group-hover:bg-orange-100 transition-colors">
                   查看详细诊断报告
                 </div>
               </div>
