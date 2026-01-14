@@ -624,26 +624,29 @@ export default function MathExamAnalysis() {
         </div>
 
         {/* Tab导航 */}
-        <div className="flex gap-2 mb-5 overflow-x-auto pb-2">
-          {[
-            { id: 'overview', label: '诊断总览' },
-            { id: 'radar', label: '知识雷达' },
-            { id: 'errors', label: '错题分析' },
-            { id: 'practice', label: '针对练习' },
-            { id: 'plan', label: '提分方案' }
-          ].map(tab => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`px-5 py-2.5 rounded-xl font-medium whitespace-nowrap transition-all ${
-                activeTab === tab.id
-                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-200'
-                  : 'bg-white text-gray-600 hover:bg-gray-50 shadow'
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
+        <div className="relative mb-5">
+          <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-blue-50 via-blue-50/80 to-transparent pointer-events-none z-10 md:hidden" />
+          <div className="flex gap-2 overflow-x-auto pb-2 pr-8 md:pr-0">
+            {[
+              { id: 'overview', label: '诊断总览' },
+              { id: 'radar', label: '知识雷达' },
+              { id: 'errors', label: '错题分析' },
+              { id: 'practice', label: '针对练习' },
+              { id: 'plan', label: '提分方案' }
+            ].map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`px-5 py-2.5 rounded-xl font-medium whitespace-nowrap transition-all ${
+                  activeTab === tab.id
+                    ? 'bg-blue-600 text-white shadow-lg shadow-blue-200'
+                    : 'bg-white text-gray-600 hover:bg-gray-50 shadow'
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* 内容区 */}
